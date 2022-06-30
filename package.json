@@ -8,9 +8,9 @@
     "start": "remix-serve build"
   },
   "dependencies": {
-    "@mantine/core": "^4.2.7",
-    "@mantine/hooks": "^4.2.7",
-    "@mantine/ssr": "^4.2.7",
+    "@mantine/core": "5.0.0-alpha.18",
+    "@mantine/hooks": "5.0.0-alpha.18",
+    "@mantine/ssr": "5.0.0-alpha.18",
     "@remix-run/node": "^1.5.1",
     "@remix-run/react": "^1.5.1",
     "@remix-run/serve": "^1.5.1",

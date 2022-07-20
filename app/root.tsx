@@ -9,6 +9,7 @@ import {
 } from "@remix-run/react";
 import { MantineProvider } from "@mantine/core";
 import { theme } from "./theme";
+import { StylesPlaceholder } from "./ssr";
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
@@ -23,6 +24,7 @@ export default function App() {
         <head>
           <Meta />
           <Links />
+          <StylesPlaceholder />
         </head>
         <body>
           <Outlet />

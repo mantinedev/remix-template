@@ -1,11 +1,10 @@
 import { renderToString } from "react-dom/server";
 import { RemixServer } from "@remix-run/react";
 import type { EntryContext } from "@remix-run/node";
-import { injectStylesIntoStaticMarkup, createStylesServer } from "@mantine/ssr";
-import { CacheProvider } from "@emotion/react";
-import { defaultMantineEmotionCache } from "@mantine/core";
+import { createStylesServer } from "@mantine/ssr";
+import { injectStyles } from "./ssr";
 
-const server = createStylesServer(defaultMantineEmotionCache);
+const server = createStylesServer();
 
 export default function handleRequest(
   request: Request,
@@ -14,20 +13,12 @@ export default function handleRequest(
   remixContext: EntryContext
 ) {
   let markup = renderToString(
-    <CacheProvider value={defaultMantineEmotionCache}>
-      <RemixServer context={remixContext} url={request.url} />
-    </CacheProvider>
+    <RemixServer context={remixContext} url={request.url} />
   );
   responseHeaders.set("Content-Type", "text/html");
 
-  return new Response(
-    `<!DOCTYPE html>${injectStylesIntoStaticMarkup(
-      markup,
-      defaultMantineEmotionCache
-    )}`,
-    {
-      status: responseStatusCode,
-      headers: responseHeaders,
-    }
-  );
+  return new Response(`<!DOCTYPE html>${injectStyles(markup, server)}`, {
+    status: responseStatusCode,
+    headers: responseHeaders,
+  });
 }

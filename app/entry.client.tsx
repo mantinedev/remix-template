@@ -1,10 +1,10 @@
 import { RemixBrowser } from "@remix-run/react";
 import { hydrate } from "react-dom";
-import { RemixClientProvider } from "./ssr";
+import { ClientProvider } from "@mantine/remix";
 
 hydrate(
-  <RemixClientProvider>
+  <ClientProvider>
     <RemixBrowser />
-  </RemixClientProvider>,
+  </ClientProvider>,
   document
 );

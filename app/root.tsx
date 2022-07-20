@@ -8,8 +8,8 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 import { MantineProvider } from "@mantine/core";
+import { StylesPlaceholder } from "@mantine/remix";
 import { theme } from "./theme";
-import { StylesPlaceholder } from "./ssr";
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",

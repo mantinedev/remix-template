@@ -1,5 +1,10 @@
-import { Text } from "@mantine/core";
+import { Button, Badge } from "@mantine/core";
 
 export default function Index() {
-  return <Text>Welcome to Mantine!</Text>;
+  return (
+    <>
+      <Button>Welcome to Mantine!</Button>
+      <Badge>Welcome to Mantine!</Badge>
+    </>
+  );
 }

@@ -1,10 +1,12 @@
-import { Button, Badge } from "@mantine/core";
+import { Text, Button, Stack } from "@mantine/core";
 
 export default function Index() {
   return (
-    <>
-      <Button>Welcome to Mantine!</Button>
-      <Badge>Welcome to Mantine!</Badge>
-    </>
+    <Stack align="center" mt={50}>
+      <Text size="xl" weight={500}>
+        Welcome to Mantine!
+      </Text>
+      <Button>Click the button</Button>
+    </Stack>
   );
 }

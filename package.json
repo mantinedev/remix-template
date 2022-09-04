@@ -13,18 +13,18 @@
     "@mantine/core": "5.2.5",
     "@mantine/hooks": "5.2.5",
     "@mantine/remix": "5.2.5",
-    "@remix-run/node": "^1.6.5",
-    "@remix-run/react": "^1.6.5",
-    "@remix-run/serve": "^1.6.5",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "@remix-run/node": "^1.7.0",
+    "@remix-run/react": "^1.7.0",
+    "@remix-run/serve": "^1.7.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@remix-run/dev": "^1.6.5",
-    "@remix-run/eslint-config": "^1.6.5",
-    "@types/react": "^17.0.45",
-    "@types/react-dom": "^17.0.17",
-    "eslint": "^8.15.0",
+    "@remix-run/dev": "^1.7.0",
+    "@remix-run/eslint-config": "^1.7.0",
+    "@types/react": "^18.0.18",
+    "@types/react-dom": "^18.0.6",
+    "eslint": "^8.23.0",
     "typescript": "^4.8.2"
   },
   "engines": {

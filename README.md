@@ -37,3 +37,7 @@ Make sure to deploy the output of `remix build`
 
 - `build/`
 - `public/build/`
+
+### Important 
+- This template should work as expected however if styles aren't being applied please make sure to check browser extension as they might sometime inject their own styles to `head` tag
+- It has been pointed out that `loom ` extensions causes this kind of errors

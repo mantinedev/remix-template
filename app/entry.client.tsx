@@ -4,9 +4,8 @@ import { ClientProvider } from "@mantine/remix";
 import { hydrateRoot } from "react-dom/client";
 
 hydrateRoot(
+  document,
   <ClientProvider>
     <RemixBrowser />
-  </ClientProvider>,
-    document,
-
+  </ClientProvider>
 );

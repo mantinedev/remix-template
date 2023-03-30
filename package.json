@@ -8,24 +8,24 @@
     "start": "remix-serve build"
   },
   "dependencies": {
-    "@emotion/react": "^11.10.4",
+    "@emotion/react": "^11.10.6",
     "@emotion/server": "^11.10.0",
-    "@mantine/core": "6.0.0",
-    "@mantine/hooks": "6.0.0",
-    "@mantine/remix": "6.0.0",
-    "@remix-run/node": "^1.7.0",
-    "@remix-run/react": "^1.7.0",
-    "@remix-run/serve": "^1.7.0",
+    "@mantine/core": "6.0.5",
+    "@mantine/hooks": "6.0.5",
+    "@mantine/remix": "6.0.5",
+    "@remix-run/node": "^1.14.3",
+    "@remix-run/react": "^1.14.3",
+    "@remix-run/serve": "^1.14.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@remix-run/dev": "^1.7.0",
-    "@remix-run/eslint-config": "^1.7.0",
-    "@types/react": "^18.0.18",
-    "@types/react-dom": "^18.0.6",
-    "eslint": "^8.23.0",
-    "typescript": "^4.8.2"
+    "@remix-run/dev": "^1.14.3",
+    "@remix-run/eslint-config": "^1.14.3",
+    "@types/react": "^18.0.31",
+    "@types/react-dom": "^18.0.11",
+    "eslint": "^8.37.0",
+    "typescript": "^4.9.5"
   },
   "engines": {
     "node": ">=14"

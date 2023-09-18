@@ -1,4 +1,6 @@
-import type { MetaFunction } from "@remix-run/node";
+import "@mantine/core/styles.css";
+import { cssBundleHref } from "@remix-run/css-bundle";
+import type { LinksFunction } from "@remix-run/node";
 import {
   Links,
   LiveReload,
@@ -7,34 +9,34 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
-import { createEmotionCache, MantineProvider } from "@mantine/core";
-import { StylesPlaceholder } from "@mantine/remix";
+import { MantineProvider, ColorSchemeScript } from "@mantine/core";
 import { theme } from "./theme";
 
-export const meta: MetaFunction = () => ({
-  charset: "utf-8",
-  title: "New Remix App",
-  viewport: "width=device-width,initial-scale=1",
-});
-
-createEmotionCache({ key: "mantine" });
+export const links: LinksFunction = () => [
+  ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
+];
 
 export default function App() {
   return (
-    <MantineProvider theme={theme} withGlobalStyles withNormalizeCSS>
-      <html lang="en">
-        <head>
-          <StylesPlaceholder />
-          <Meta />
-          <Links />
-        </head>
-        <body>
+    <html lang="en">
+      <head>
+        <meta charSet="utf-8" />
+        <meta
+          name="viewport"
+          content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
+        />
+        <Meta />
+        <Links />
+        <ColorSchemeScript />
+      </head>
+      <body>
+        <MantineProvider theme={theme}>
           <Outlet />
           <ScrollRestoration />
           <Scripts />
           <LiveReload />
-        </body>
-      </html>
-    </MantineProvider>
+        </MantineProvider>
+      </body>
+    </html>
   );
 }

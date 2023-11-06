@@ -10,28 +10,29 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@mantine/core": "7.0.1",
-    "@mantine/hooks": "7.0.1",
-    "@remix-run/css-bundle": "^2.0.1",
-    "@remix-run/node": "^2.0.1",
-    "@remix-run/react": "^2.0.1",
-    "@remix-run/serve": "^2.0.1",
-    "isbot": "^3.6.8",
+    "@mantine/core": "7.1.7",
+    "@mantine/hooks": "7.1.7",
+    "@remix-run/css-bundle": "^2.2.0",
+    "@remix-run/node": "^2.2.0",
+    "@remix-run/react": "^2.2.0",
+    "@remix-run/serve": "^2.2.0",
+    "isbot": "^3.7.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@remix-run/dev": "^2.0.1",
-    "@remix-run/eslint-config": "^2.0.1",
-    "@types/react": "^18.2.20",
-    "@types/react-dom": "^18.2.7",
-    "eslint": "^8.38.0",
-    "postcss": "^8.4.30",
-    "postcss-preset-mantine": "^1.7.0",
+    "@remix-run/dev": "^2.2.0",
+    "@remix-run/eslint-config": "^2.2.0",
+    "@types/react": "^18.2.35",
+    "@types/react-dom": "^18.2.14",
+    "eslint": "^8.53.0",
+    "postcss": "^8.4.31",
+    "postcss-preset-mantine": "^1.9.1",
     "postcss-simple-vars": "^7.0.1",
-    "typescript": "^5.1.6"
+    "typescript": "^5.2.2"
   },
   "engines": {
     "node": ">=18.0.0"
-  }
+  },
+  "packageManager": "yarn@4.0.1"
 }

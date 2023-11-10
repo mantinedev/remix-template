@@ -10,8 +10,8 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@mantine/core": "7.2.0",
-    "@mantine/hooks": "7.2.0",
+    "@mantine/core": "7.2.1",
+    "@mantine/hooks": "7.2.1",
     "@remix-run/css-bundle": "^2.2.0",
     "@remix-run/node": "^2.2.0",
     "@remix-run/react": "^2.2.0",

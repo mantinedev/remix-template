@@ -11,8 +11,8 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@mantine/core": "7.15.3",
-    "@mantine/hooks": "7.15.3",
+    "@mantine/core": "7.16.0",
+    "@mantine/hooks": "7.16.0",
     "@remix-run/node": "^2.9.2",
     "@remix-run/react": "^2.9.2",
     "@remix-run/serve": "^2.9.2",
